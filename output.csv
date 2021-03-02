@@ -1,81 +1,101 @@
-component,count
-Metrics,946879
-PeriodicHealthReporter,100140
-ModularInputs,492
-DatabaseDirectoryManager,371
-HotDBManager,267
-ExecProcessor,187
-loader,154
-HotBucketRoller,131
-IndexWriter,116
-WatchedFile,77
-SpecFiles,76
-MongodRunner,75
-TailingProcessor,68
-LMStackMgr,62
-ServerConfig,51
-HttpListener,45
-IndexerService,45
-LMConfig,43
-ProcessTracker,39
-PipelineComponent,35
-SSLCommon,35
-TimeoutHeap,35
-IndexerIf,29
-OnlineFsck,29
-LMTracker,28
-TailReader,27
-IndexProcessor,26
-DS_DC_Common,24
-KeyManagerLocalhost,24
-CMBucketId,20
-CertStorageProvider,20
-LicenseMgr,16
-ProxyConfig,16
-PubSubSvr,16
-TcpOutputProc,16
-LMSlaveInfo,15
-IntrospectionGenerator:disk_objects,12
-LMLicense,12
-MetricSchemaProcessor,12
-UiHttpListener,12
-Rsa2FA,10
-ShutdownHandler,10
-WatchdogActions,10
-CascadingReplicationManager,8
-ClusteringMgr,8
-DC:DeploymentClient,8
-DSManager,8
-DeploymentServer,8
-IntrospectionGenerator:resource_usage,8
-KVStoreBackupRestore,8
-RemoteQueueInputProcessor,8
-SHClusterMgr,8
-ServerRoles,8
-LicenseUsage,6
-ProcessDispatchedSearch,6
-Pstacks,6
-ApplicationLicense,5
-LocalAppsAdminHandler,5
-STMgr,5
-ScheduledViewsReaper,5
-BucketMover,4
-BundlesSetup,4
-CacheManager,4
-ClientSessionsManager,4
-FileAndDirectoryEliminator,4
-HTTPAuthManager,4
-IndexerInit,4
-LMStack,4
-MPool,4
-MetricAlertManager,4
-SHCConfig,4
-TcpInputProc,4
-Watchdog,4
-WorkloadManager,4
-X509Verify,4
-AuthenticationManagerSplunk,2
-KVStoreBulletinBoardManager,2
-ProcessRunner,2
-TelemetryHandler,2
-DiskMon,1
+event_message
+"Creating hot bucket=hot_v1_8, idx=_telemetry, event timestamp=1614623400, reason=""suitable bucket not found, number of hot buckets=0, max=3"""
+"Detected that masterTimeFromSlave(Mon Mar  1 23:59:14 2021) < lastRolloverTime(Tue Mar  2 00:00:00 2021), meaning that the master has already rolled over. Ignore slave persisted usage."
+Finished writing bucket manifest in hotWarmPath=C:\Program Files\Splunk\var\lib\splunk\_telemetry\db duration=0.125
+Missing a search command before '|'. Error at position '2' of search query '| |'.
+"feature=""BatchReader-0"" color=green due_to_stanza=""feature:batchreader"" node_type=feature node_path=splunkd.file_monitor_input.batchreader-0"
+"feature=""Buckets"" color=green due_to_stanza=""feature:buckets"" node_type=feature node_path=splunkd.index_processor.buckets"
+"feature=""Configuration Check"" color=green due_to_stanza=""feature:wlm_configuration_check"" node_type=feature node_path=splunkd.workload_management.configuration_check"
+"feature=""Disk Space"" color=green due_to_stanza=""feature:disk_space"" node_type=feature node_path=splunkd.index_processor.disk_space"
+"feature=""File Monitor Input"" color=green node_type=category node_path=splunkd.file_monitor_input"
+"feature=""Index Optimization"" color=green due_to_stanza=""feature:splunkoptimize_processes"" node_type=feature node_path=splunkd.index_processor.index_optimization"
+"feature=""Index Processor"" color=green node_type=category node_path=splunkd.index_processor"
+"feature=""Search Lag"" color=green due_to_stanza=""feature:search_lag"" node_type=feature node_path=splunkd.search_scheduler.search_lag"
+"feature=""Search Scheduler"" color=green node_type=category node_path=splunkd.search_scheduler"
+"feature=""Searches Delayed"" color=green due_to_stanza=""feature:searches_delayed"" node_type=feature node_path=splunkd.search_scheduler.searches_delayed"
+"feature=""Searches Skipped"" color=green due_to_stanza=""feature:searches_skipped"" node_type=feature node_path=splunkd.search_scheduler.searches_skipped"
+"feature=""System Check"" color=green due_to_stanza=""feature:wlm_system_check"" node_type=feature node_path=splunkd.workload_management.system_check"
+"feature=""TailReader-0"" color=green due_to_stanza=""feature:tailreader"" node_type=feature node_path=splunkd.file_monitor_input.tailreader-0"
+"feature=""Workload Management"" color=green node_type=category node_path=splunkd.workload_management"
+"finished rollover, new lastRolloverTime=1614623400"
+"group=bucket_metrics, current_hot=9, current_hot_replicas=0, current_total=81, created=0, created_replicas=0, rolled=0, frozen=0, total_removed=0"
+"group=bucket_metrics, current_hot=9, current_hot_replicas=0, current_total=81, created=1, created_replicas=0, rolled=0, frozen=0, total_removed=0"
+"group=cachemgr_bucket, open_buckets=0"
+"group=deploy-connections, nCurrent=2"
+"group=deploy-server, name=app_downloads, nStarted=0, nCompleted=0, volumeCompletedKB=0.000"
+"group=deploy-server, name=clients, app_event_reports, nDownloadFail=0, nInstallOk=0, nInstallFail=0, nUninstallOk=0, nUninstallFail=0"
+"group=deploy-server, name=clients, nNew=0, nTotal=0"
+"group=deploy-server, name=clients, phonehome, nReceived=0"
+"group=dutycycle, name=ingest, thread=archivepipe, ratio=0.000"
+"group=dutycycle, name=ingest, thread=dev-null, ratio=0.000"
+"group=dutycycle, name=ingest, thread=exec, ratio=0.000"
+"group=dutycycle, name=ingest, thread=fschangemanager, ratio=0.000"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.018"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.020"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.021"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.022"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.024"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.033"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.082"
+"group=dutycycle, name=ingest, thread=indexerpipe, ratio=0.084"
+"group=dutycycle, name=ingest, thread=merging, ratio=0.000"
+"group=dutycycle, name=ingest, thread=merging, ratio=0.001"
+"group=dutycycle, name=ingest, thread=parsing, ratio=0.000"
+"group=dutycycle, name=ingest, thread=parsing, ratio=0.001"
+"group=dutycycle, name=ingest, thread=stashparsing, ratio=0.000"
+"group=dutycycle, name=ingest, thread=tcp, ratio=0.000"
+"group=dutycycle, name=ingest, thread=typing, ratio=0.000"
+"group=dutycycle, name=ingest, thread=udp, ratio=0.000"
+"group=dutycycle, name=ingest, thread=wineventlog, ratio=0.000"
+"group=dutycycle, name=ingest, thread=winparsing, ratio=0.000"
+"group=dutycycle, name=management, thread=applicensethread, ratio=0.000"
+"group=dutycycle, name=management, thread=archivereader, ratio=0.000"
+"group=dutycycle, name=management, thread=batchreader0, ratio=0.000"
+"group=dutycycle, name=management, thread=cachemanagerusagemetrics, ratio=0.000"
+"group=dutycycle, name=management, thread=callbackrunnerthread, ratio=0.000"
+"group=dutycycle, name=management, thread=diagdownloadthread, ratio=0.000"
+"group=dutycycle, name=management, thread=dispatchlogthread, ratio=0.000"
+"group=dutycycle, name=management, thread=dispatchreaper, ratio=0.000"
+"group=dutycycle, name=management, thread=dispatchreaper, ratio=0.001"
+"group=dutycycle, name=management, thread=distributedpeermonitorthread, ratio=0.000"
+"group=dutycycle, name=management, thread=distributedrestcallereventloopthread, ratio=0.000"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.001"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.002"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.003"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.006"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.013"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.015"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.020"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.038"
+"group=dutycycle, name=management, thread=execprocessor, ratio=0.081"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=0.000"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=0.001"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=0.011"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=0.095"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=0.807"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=0.959"
+"group=dutycycle, name=management, thread=fsupdaterthread, ratio=1.000"
+"group=dutycycle, name=management, thread=fwddatareceiverthread, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-0, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-1, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-2, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-3, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-4, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-5, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-6, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdedicatediothread-7, ratio=0.000"
+"group=dutycycle, name=management, thread=httpdispatch, ratio=0.000"
+"group=dutycycle, name=management, thread=httpinputqueuethread, ratio=0.000"
+"group=dutycycle, name=management, thread=httpinputservermanagementthread, ratio=0.000"
+"group=dutycycle, name=management, thread=idatado_collector, ratio=0.000"
+"group=dutycycle, name=management, thread=idatado_collector, ratio=0.003"
+"group=dutycycle, name=management, thread=idle_http_client, ratio=0.000"
+"group=dutycycle, name=management, thread=indexerservice, ratio=0.001"
+"group=dutycycle, name=management, thread=indexerservice, ratio=0.004"
+"group=dutycycle, name=management, thread=indexerservice, ratio=0.005"
+"group=dutycycle, name=management, thread=indexerservice, ratio=0.006"
+"group=dutycycle, name=management, thread=indexerservice, ratio=0.007"
+"group=dutycycle, name=management, thread=indexerservice, ratio=0.021"
+"group=dutycycle, name=management, thread=indexertpoolworker-0, ratio=0.002"
+"group=dutycycle, name=management, thread=indexertpoolworker-0, ratio=0.003"
+"group=dutycycle, name=management, thread=indexertpoolworker-0, ratio=0.005"
